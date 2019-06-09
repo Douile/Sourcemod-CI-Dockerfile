@@ -59,7 +59,7 @@ test -e $COMPILE_DIR || mkdir $COMPILE_DIR
 
 dir_before=$(pwd)
 cd $BUILD_DIR
-for sourcefile in *.sp
+for sourcefile in $(find -name "*.sp")
 do
 	# Guard to prevent processing *.sp when no files in directory
 	if [ ! -f "$sourcefile" ]; then
