@@ -39,7 +39,7 @@ USER smuser
 WORKDIR /home/smuser
 
 # Pull the latest stable sourcemod version
-RUN BASE_SM_DL_URL=http://www.sourcemod.net/smdrop/1.8 && \
+RUN BASE_SM_DL_URL=http://www.sourcemod.net/smdrop/1.9 && \
 	LATEST_SM_VERSION=`wget $BASE_SM_DL_URL/sourcemod-latest-linux -q -O -` && \
 	echo Detected sourcemod version: $LATEST_SM_VERSION && \
 	wget -qO sourcemod.tar.gz $BASE_SM_DL_URL/$LATEST_SM_VERSION
