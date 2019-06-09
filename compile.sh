@@ -81,7 +81,7 @@ do
 
 	# Invoke the compiler
 	echo -e "Compiling $sourcefile ..."
-	$SP_COMP_EXE $sourcefile -o$COMPILE_DIR/$smxfile -i$BUILD_DIR/include $additional_params
+	$SP_COMP_EXE $sourcefile -o $COMPILE_DIR/$smxfile -i $BUILD_DIR/include $additional_params
 	RETVAL=$?
 	if [ $RETVAL -ne 0 ]; then
 		compile_failed
